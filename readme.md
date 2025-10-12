@@ -22,7 +22,8 @@ PersonalCard/
 │   ├── images.css            # Gallery slider styles
 │   └── responzive.css        # Responsive design rules
 ├── js/
-│   └── slogan-animation.js   # Scroll-triggered animations
+│   ├── browser-optimization.js # Performance and browser optimizations
+│   └── slogan-animation.js     # Scroll-triggered animations
 └── assets/
     ├── logo.svg              # Company logo
     └── *.jpg                 # Gallery images
