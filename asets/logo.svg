@@ -1,0 +1,48 @@
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Hlavný gradient pre M&R -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4a6a6"/>
+      <stop offset="50%" style="stop-color:#e8a87c"/>
+      <stop offset="100%" style="stop-color:#8b4513"/>
+    </linearGradient>
+    
+    <!-- Gradient pre podtext -->
+    <linearGradient id="subtextGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b4513"/>
+      <stop offset="50%" style="stop-color:#cd853f"/>
+      <stop offset="100%" style="stop-color:#8b4513"/>
+    </linearGradient>
+    
+    <!-- Tieň efekt -->
+    <filter id="dropshadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="1" flood-color="#8b4513" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Dekoratívne pozadie -->
+  <circle cx="150" cy="50" r="45" fill="none" stroke="url(#logoGradient)" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Hlavný text M&R -->
+  <text x="150" y="45" 
+        text-anchor="middle" 
+        font-family="Georgia, serif" 
+        font-size="55" 
+        font-weight="bold" 
+        fill="url(#logoGradient)" 
+        letter-spacing="4"
+        filter="url(#dropshadow)">M&amp;R</text>
+  
+  <!-- Podtext -->
+  <text x="150" y="70" 
+        text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="8" 
+        fill="url(#subtextGradient)" 
+        letter-spacing="1.5"
+        font-weight="300">DIZAJN - NECHTY - KURZY</text>
+  
+  <!-- Dekoratívne čiary -->
+  <line x1="50" y1="80" x2="120" y2="80" stroke="url(#logoGradient)" stroke-width="1" opacity="0.6"/>
+  <line x1="180" y1="80" x2="250" y2="80" stroke="url(#logoGradient)" stroke-width="1" opacity="0.6"/>
+</svg>

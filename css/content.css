@@ -1,0 +1,111 @@
+main {
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 10% 0 10%;
+}
+
+/* ZÁKLADNÉ p elementy - iba v hlavnej časti */
+main > p {
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  font-size: xx-large;
+  text-align: center;
+  color: #8b4513;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  margin: 20px auto;
+}
+
+/* Hlavné p elementy - ihneď viditeľné */
+main > p.right {
+  transform: translateX(-100px);
+  animation-name: slideInFromLeft;
+  animation-delay: 0.8s;
+  text-align: end;
+}
+
+main > p.left {
+  transform: translateX(100px);
+  animation-name: slideInFromRight;
+  animation-delay: 1.2s;
+  text-align: start;
+}
+
+/* SLOGAN sekcie - scroll animácia */
+.slogan {
+  margin-top: 15%;
+}
+
+.slogan p {
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  font-size: x-large;
+  color: #8b4513;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  margin: 20px auto;
+}
+
+.slogan.animate p {
+  animation: slideInFromBottom 1s ease-out forwards;
+}
+
+/* KEYFRAMES - iba raz definované */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONZÍVNE - iba nevyhnutné zmeny */
+@media (max-width: 768px) {
+  main > p,
+  .slogan p {
+    font-size: x-large;
+  }
+
+  main > p.right {
+    transform: translateX(-50px);
+  }
+
+  main > p.left {
+    transform: translateX(50px);
+  }
+}
+
+@media (max-width: 480px) {
+  main > p,
+  .slogan p {
+    font-size: large;
+    margin: 15px auto;
+  }
+}
