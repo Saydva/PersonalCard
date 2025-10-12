@@ -1,37 +1,5 @@
-/* GALÉRIA - rovnaké rozmery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
-}
-
-.gallery-item {
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery-item:hover img {
-  transform: scale(1.05);
-}
-
-/* Responzívne */
+/* Responsive */
 @media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-
   .gallery-item {
     height: 200px;
   }
@@ -47,7 +15,7 @@
   }
 }
 
-/* SLIDER GALÉRIA - spustí sa na hover */
+/* SLIDER GALLERY - starts on hover */
 .gallery {
   margin-top: 10%;
   overflow: hidden;
@@ -63,7 +31,7 @@
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* SLIDER KONTAJNER */
+/* SLIDER CONTAINER */
 .gallery-slider {
   position: relative;
   width: 100%;
@@ -74,7 +42,7 @@
   cursor: pointer;
 }
 
-/* SLIDER TRACK - default stojí */
+/* SLIDER TRACK - default stationary */
 .gallery-track {
   display: flex;
   width: calc(300px * 12);
@@ -82,7 +50,7 @@
   animation: none;
 }
 
-/* Spustenie na hover */
+/* Start on hover */
 .gallery-slider:hover .gallery-track {
   animation: slideLeft 24s linear infinite;
 }
@@ -101,7 +69,7 @@
   object-fit: cover;
 }
 
-/* ANIMÁCIA */
+/* ANIMATION */
 @keyframes slideLeft {
   0% {
     transform: translateX(0);
@@ -135,9 +103,9 @@
   }
 }
 
-/* HOVER INDIKÁTOR */
+/* HOVER INDICATOR */
 .gallery-slider::before {
-  content: 'Hover pre spustenie';
+  content: 'Hover to start';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -153,59 +121,4 @@
 
 .gallery-slider:hover::before {
   opacity: 0;
-}
-
-/* RESPONZÍVNE */
-@media (max-width: 768px) {
-  .gallery-slider {
-    height: 300px;
-  }
-
-  .gallery-item {
-    width: 250px;
-  }
-
-  .gallery-track {
-    width: calc(250px * 12);
-  }
-
-  .gallery-slider:hover .gallery-track {
-    animation: slideLeftMobile 20s linear infinite;
-  }
-
-  @keyframes slideLeftMobile {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 6 - 120px));
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-slider {
-    height: 250px;
-  }
-
-  .gallery-item {
-    width: 200px;
-  }
-
-  .gallery-track {
-    width: calc(200px * 12);
-  }
-
-  .gallery-slider:hover .gallery-track {
-    animation: slideLeftSmall 18s linear infinite;
-  }
-
-  @keyframes slideLeftSmall {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-200px * 6 - 90px));
-    }
-  }
 }

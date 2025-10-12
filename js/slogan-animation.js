@@ -1,27 +1,27 @@
-// Intersection Observer pre scroll animácie
+// Intersection Observer for scroll animations
 const observerOptions = {
-  threshold: 0.5, // Spustí animáciu keď je 30% elementu viditeľné
-  rootMargin: '0px 0px -50px 0px', // Offset pre spustenie
+  threshold: 0.5, // Triggers animation when 50% of element is visible
+  rootMargin: '0px 0px -50px 0px', // Offset for triggering
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Pridá triedu pre animáciu
+      // Adds class for animation
       entry.target.classList.add('animate');
 
-      // Prestane pozorovať element (animácia sa spustí len raz)
+      // Stops observing element (animation triggers only once)
       observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-// Spustí sa keď sa stránka načíta
+// Runs when page loads
 document.addEventListener('DOMContentLoaded', () => {
-  // Nájde všetky .slogan elementy
+  // Finds all .slogan elements
   const sloganElements = document.querySelectorAll('.slogan');
 
-  // Začne ich pozorovať
+  // Starts observing them
   sloganElements.forEach((element) => {
     observer.observe(element);
   });

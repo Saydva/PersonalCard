@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
   width: 80%;
   overflow: hidden;
   background: #dfd1d0;
@@ -12,7 +12,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* POUŽÍVANÉ - figure elementy */
+/* USED - figure elements */
 .header-logo figure {
   margin: 0;
   padding: 0;
@@ -21,23 +21,23 @@
   justify-content: center;
   align-items: center;
   max-height: 100%;
-  /* ANIMÁCIA - slide in */
+  /* ANIMATION - slide in */
   opacity: 0;
   will-change: transform, opacity;
   transform: translateZ(0);
 }
 
-/* OPTIMALIZOVANÉ ANIMÁCIE */
+/* OPTIMIZED ANIMATIONS */
 .header-logo figure:first-child {
   animation: slideInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
 }
 
-/* Obrázok (druhý figure) - slide zprava */
+/* Image (second figure) - slide from right */
 .header-logo figure:last-child {
   animation: slideInRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
 }
 
-/* ZLEPŠENÉ KEYFRAMES */
+/* IMPROVED KEYFRAMES */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -60,7 +60,7 @@
   }
 }
 
-/* POUŽÍVANÉ - img v figure */
+/* USED - img in figure */
 .header-logo figure img {
   width: 100%;
   height: auto;
@@ -68,17 +68,4 @@
   max-height: 100%;
   object-fit: contain;
   display: block;
-}
-
-/* Responzívne breakpointy */
-@media (max-width: 768px) {
-  .header-logo figure img {
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-logo figure img {
-    max-width: 200px;
-  }
 }
