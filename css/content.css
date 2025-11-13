@@ -1,4 +1,9 @@
 /* Combined font styles */
+h2 {
+  padding-bottom: 2rem;
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+}
+
 main > p,
 .slogan p {
   font-family: 'Dancing Script', 'Brush Script MT', cursive;
@@ -44,6 +49,18 @@ main > p.left {
 
 .slogan.animate p {
   animation: slideInFromBottom 1s ease-out forwards;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+
+li {
+  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+  color: #8b4513;
+  font-size: larger;
+  margin: 10px 0;
+  list-style-type: none;
 }
 
 /* KEYFRAMES - defined only once */

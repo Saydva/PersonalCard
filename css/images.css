@@ -51,7 +51,7 @@
 }
 
 /* Start on hover */
-.gallery-slider:hover .gallery-track {
+.gallery-slider .gallery-track {
   animation: slideLeft 24s linear infinite;
 }
 
@@ -90,7 +90,7 @@
   transform: scaleX(0);
 }
 
-.gallery-slider:hover .slider-progress {
+.gallery-slider .slider-progress {
   animation: progressBar 24s linear infinite;
 }
 
@@ -101,24 +101,4 @@
   100% {
     transform: scaleX(1);
   }
-}
-
-/* HOVER INDICATOR */
-.gallery-slider::before {
-  content: 'Hover to start';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  font-family: 'Dancing Script', cursive;
-  z-index: 10;
-  transition: opacity 0.3s ease;
-}
-
-.gallery-slider:hover::before {
-  opacity: 0;
 }

@@ -136,7 +136,7 @@ main {
     width: calc(250px * 12);
   }
 
-  .gallery-slider:hover .gallery-track {
+  .gallery-slider .gallery-track {
     animation: slideLeftMobile 20s linear infinite;
   }
 
@@ -173,7 +173,7 @@ main {
     width: calc(200px * 12);
   }
 
-  .gallery-slider:hover .gallery-track {
+  .gallery-slider .gallery-track {
     animation: slideLeftSmall 18s linear infinite;
   }
 
