@@ -59,7 +59,7 @@ main {
 
 @media (max-width: 480px) {
   nav {
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -67,7 +67,7 @@ main {
   }
 
   nav a {
-    font-size: small;
+    font-size: 1.2rem;
     padding: 6px 10px;
   }
 }
@@ -188,6 +188,14 @@ main {
 
 /* FOOTER RESPONSIVE */
 @media (max-width: 480px) {
+  html {
+    font-size: 8px;
+    text-align: center;
+  }
+  body {
+    max-width: 97%;
+  }
+
   footer p {
     font-size: 1rem;
     padding: 1rem;
