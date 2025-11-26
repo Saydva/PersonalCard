@@ -4,7 +4,7 @@ html {
 
 /* CONTAINER WITH MAX WIDTH */
 body {
-  max-width: 1400px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -18,11 +18,11 @@ main {
 @media (min-width: 1200px) {
   .header-logo {
     max-width: 1200px;
+    max-height: 400px;
     margin: 15px auto 0 auto;
   }
 
   nav {
-    max-width: 1200px;
     margin: 0 auto;
     width: 40vw; /* Preserves original behavior */
   }
@@ -35,7 +35,7 @@ main {
   }
 
   .header-logo {
-    max-width: 90%;
+    max-height: 300px;
     margin: 15px auto 0 auto;
   }
 
@@ -76,7 +76,6 @@ main {
 @media (max-width: 768px) {
   .header-logo {
     height: 25vh;
-    flex-direction: column;
   }
 
   .header-logo figure img {

@@ -18,11 +18,13 @@ const observer = new IntersectionObserver((entries) => {
 
 // Runs when page loads
 document.addEventListener('DOMContentLoaded', () => {
-  // Finds all .slogan elements
-  const sloganElements = document.querySelectorAll('.slogan');
+  // Finds all elements to animate on scroll
+  const elementsToAnimate = document.querySelectorAll(
+    '.slogan, p.right, p.left, .fade-in',
+  );
 
   // Starts observing them
-  sloganElements.forEach((element) => {
+  elementsToAnimate.forEach((element) => {
     observer.observe(element);
   });
 });

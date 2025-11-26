@@ -1,65 +1,38 @@
-/* Combined font styles */
-h2 {
-  padding-bottom: 2rem;
-  font-family: 'Dancing Script', 'Brush Script MT', cursive;
+h1 {
+  font-size: 3rem;
+  margin: 4rem 0;
 }
 
-main > p,
-.slogan p {
-  font-family: 'Dancing Script', 'Brush Script MT', cursive;
-  color: #8b4513;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-}
-
-main > p {
-  font-size: xx-large;
-  text-align: center;
+.right {
   opacity: 0;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-.slogan p {
-  font-size: x-large;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-/* Main p elements - immediately visible */
-main > p.right {
   transform: translateX(-100px);
-  animation-name: slideInFromLeft;
-  animation-delay: 0.8s;
   text-align: end;
 }
 
-main > p.left {
+.left {
+  opacity: 0;
   transform: translateX(100px);
-  animation-name: slideInFromRight;
-  animation-delay: 1.2s;
   text-align: start;
 }
 
-/* SLOGAN sections - scroll animation */
-.slogan {
-  margin: 40px 0;
+.right.animate {
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 
-.slogan.animate p {
-  animation: slideInFromBottom 1s ease-out forwards;
+.left.animate {
+  animation: slideInFromRight 1s ease-out forwards;
 }
 
-.about {
-  padding-bottom: 2rem;
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in.animate {
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 li {
-  font-family: 'Dancing Script', 'Brush Script MT', cursive;
-  color: #8b4513;
-  font-size: larger;
-  margin: 10px 0;
+  margin: 2rem 0;
   list-style-type: none;
 }
 
@@ -95,4 +68,66 @@ li {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.element {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Test fonts for comparison */
+.script-font {
+  font-size: xx-large;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  opacity: 1;
+}
+
+.great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.allura {
+  font-family: 'Allura', cursive;
+}
+
+.alex-brush {
+  font-family: 'Alex Brush', cursive;
+}
+
+.dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.bigger {
+  font-size: 1.5rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.self-center {
+  text-align: center;
+}
+
+.letter-spacing {
+  letter-spacing: 0.2rem;
+}
+
+.brown-color {
+  color: #8b4513;
 }
