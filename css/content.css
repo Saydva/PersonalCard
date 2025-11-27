@@ -3,6 +3,17 @@ h1 {
   margin: 4rem 0.2rem;
 }
 
+li {
+  margin: 2rem 0;
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+/* animations */
+
 .right {
   opacity: 0;
   transform: translateX(-100px);
@@ -29,11 +40,6 @@ h1 {
 
 .fade-in.animate {
   animation: fadeIn 2s ease-in-out forwards;
-}
-
-li {
-  margin: 2rem 0;
-  list-style-type: none;
 }
 
 /* KEYFRAMES - defined only once */
@@ -106,6 +112,8 @@ li {
 .dancing-script {
   font-family: 'Dancing Script', cursive;
 }
+
+/* self made css */
 
 .bold {
   font-weight: bold;
