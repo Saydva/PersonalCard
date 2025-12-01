@@ -188,11 +188,15 @@ main {
 
 @media (max-width: 480px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
     text-align: center;
   }
   body {
     max-width: 97%;
+  }
+
+  main {
+    padding: 0 5%;
   }
 
   footer p {

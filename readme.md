@@ -1,97 +1,97 @@
-# M&R Design - Personal Card Portfolio
+# M&R Design - Osobná karta portfólia
 
-Modern, responsive website for nail design services built with clean HTML, CSS, and JavaScript.
+Moderná, responzívna webová stránka pre služby návrhu nechtov vytvorená pomocou čistého HTML, CSS a JavaScript.
 
-## 📱 Quick Mobile Access
+## 📱 Rýchly mobilný prístup
 
-Scan the QR code below to view the live site on your mobile device:
+Naskenujte QR kód nižšie na zobrazenie živého webu na vašom mobilnom zariadení:
 
 ![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://Saydva.github.io/PersonalCard)
 
-**Live Demo:** [https://Saydva.github.io/PersonalCard
+**Živá ukážka:** [https://Saydva.github.io/PersonalCard
 ](https://Saydva.github.io/PersonalCard)
 
-_Note: Replace `username` and `nail-design-portfolio` with your actual GitHub username and repository name after upload._
+_Poznámka: Po nahratí nahraďte `username` a `nail-design-portfolio` vaším skutočným používateľským menom GitHub a názvom repozitára._
 
-## 🛠️ Technologies Used
+## 🛠️ Použité technológie
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with Flexbox, Grid, Animations
-- **Vanilla JavaScript** - Intersection Observer API for scroll animations
-- **Google Fonts** - Dancing Script font family
+- **HTML5** - Sémantické označenie
+- **CSS3** - Moderné štýlovanie s Flexbox, Grid, Animáciami
+- **Vanilla JavaScript** - Intersection Observer API pre animácie pri posúvaní
+- **Google Fonts** - Rodina písiem Dancing Script
 
-## 📂 File Structure
+## 📂 Štruktúra súborov
 
 ```
 PersonalCard/
-├── index.html                 # Main HTML file
+├── index.html                 # Hlavný HTML súbor
 ├── css/
-│   ├── style.css             # Main CSS imports
-│   ├── header-logo.css       # Header and logo styles
-│   ├── navigation.css        # Navigation menu styles
-│   ├── content.css           # Main content and typography
-│   ├── images.css            # Gallery slider styles
-│   └── responzive.css        # Responsive design rules
+│   ├── style.css             # Hlavné CSS importy
+│   ├── header-logo.css       # Štýly hlavičky a loga
+│   ├── navigation.css        # Štýly navigačného menu
+│   ├── content.css           # Hlavný obsah a typografia
+│   ├── images.css            # Štýly galérie slider
+│   └── responzive.css        # Pravidlá responzívneho dizajnu
 ├── js/
-│   ├── optimization.js       # Performance and browser optimizations
-│   └── slogan-animation.js   # Scroll-triggered animations
+│   ├── optimization.js       # Optimalizácie výkonu a prehliadača
+│   └── slogan-animation.js   # Animácie spúšťané posúvaním
 └── assets/
-    ├── logo.svg              # Company logo
-    └── *.jpg                 # Gallery images
+    ├── logo.svg              # Logo spoločnosti
+    └── *.jpg                 # Obrázky galérie
 ```
 
-## ✨ Features
+## ✨ Funkcie
 
-- **Responsive Design** - Works on desktop, tablet, and mobile
-- **Smooth Animations** - CSS keyframes and JavaScript scroll triggers
-- **Interactive Gallery** - Hover-activated image slider
-- **Modern Layout** - Flexbox and CSS Grid
-- **Performance Optimized** - Lazy loading images, browser optimizations
-- **Mobile QR Access** - Easy mobile testing via QR code
+- **Responzívny dizajn** - Funguje na počítači, tablete a mobile
+- **Plynulé animácie** - CSS keyframes a JavaScript spúšťače posúvania
+- **Interaktívna galéria** - Slider obrázkov aktivovaný hoverom
+- **Moderný layout** - Flexbox a CSS Grid
+- **Optimalizovaný výkon** - Lenivé načítanie obrázkov, optimalizácie prehliadača
+- **Mobilný QR prístup** - Ľahké mobilné testovanie cez QR kód
 
-## 🚀 Quick Start
+## 🚀 Rýchly štart
 
-### Local Development:
+### Lokálny vývoj:
 
-1. Clone or download the project
-2. Open `index.html` in VS Code
-3. Install **Live Server** extension
-4. Right-click → "Open with Live Server"
-5. Scan QR code for mobile access
+1. Naklonujte alebo stiahnite projekt
+2. Otvorte `index.html` vo VS Code
+3. Nainštalujte rozšírenie **Live Server**
+4. Kliknite pravým tlačidlom → "Open with Live Server"
+5. Naskenujte QR kód pre mobilný prístup
 
-### GitHub Pages Deployment:
+### Nasadenie na GitHub Pages:
 
-1. Upload to GitHub repository
-2. Enable GitHub Pages in Settings
-3. Access via: `https://username.github.io/repo-name`
+1. Nahrajte do GitHub repozitára
+2. Povolte GitHub Pages v Nastaveniach
+3. Prístup cez: `https://username.github.io/repo-name`
 
-## 📱 Responsive Breakpoints
+## 📱 Responzívne zlomové body
 
-- **Desktop**: 1200px and above
+- **Počítač**: 1200px and above
 - **Tablet**: 769px - 1199px
-- **Mobile**: 768px and below
-- **Small Mobile**: 480px and below
+- **Mobil**: 768px and below
+- **Malý mobil**: 480px and below
 
-## 🎨 Design Highlights
+## 🎨 Dizajnové highlights
 
-- Custom color scheme with warm tones (#8b4513, #dfd1d0)
-- Elegant Dancing Script typography
-- Smooth scroll behavior
-- Interactive hover effects
-- Professional layout with semantic HTML
-- Cross-browser optimization
+- Vlastná farebná schéma s teplými tónmi (#8b4513, #dfd1d0)
+- Elegantná typografia Dancing Script
+- Plynulé správanie posúvania
+- Interaktívne efekty hover
+- Profesionálny layout so sémantickým HTML
+- Optimalizácia pre rôzne prehliadače
 
-## 🔧 Browser Support
+## 🔧 Podpora prehliadačov
 
-- ✅ Chrome/Edge (latest)
-- ✅ Firefox (latest)
-- ✅ Safari (latest)
-- ✅ Mobile browsers
-- ✅ WebP image support detection
-- ✅ Reduced motion preferences
+- ✅ Chrome/Edge (najnovšie)
+- ✅ Firefox (najnovšie)
+- ✅ Safari (najnovšie)
+- ✅ Mobilné prehliadače
+- ✅ Detekcia podpory WebP obrázkov
+- ✅ Predvoľby zníženého pohybu
 
 ---
 
-_Built with ❤️ using clean, semantic code_
+_Vytvorené s ❤️ pomocou čistého, sémantického kódu_
 
-**Mobile Quick Access:** Scan QR code above 📱
+**Rýchly mobilný prístup:** Naskenujte QR kód vyššie 📱
