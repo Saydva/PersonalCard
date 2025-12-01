@@ -186,7 +186,6 @@ main {
   }
 }
 
-/* FOOTER RESPONSIVE */
 @media (max-width: 480px) {
   html {
     font-size: 8px;
