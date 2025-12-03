@@ -191,9 +191,9 @@ main {
     font-size: 10px;
     text-align: center;
   }
-  /* body {
-    max-width: 97%;
-  } */
+  body {
+    max-width: 100%;
+  }
 
   main {
     padding: 0 5%;
