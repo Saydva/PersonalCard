@@ -2,25 +2,36 @@
 
 Moderná, responzívna webová stránka pre služby návrhu nechtov vytvorená pomocou čistého HTML, CSS a JavaScript.
 
-## 📱 Rýchly mobilný prístup
+## Funkcie
 
-Naskenujte QR kód nižšie na zobrazenie živého webu na vašom mobilnom zariadení:
+- Responzívny dizajn - Funguje na počítači, tablete a mobile
+- Plynulé animácie - CSS keyframes a JavaScript spúšťače posúvania
+- Interaktívna galéria - Slider obrázkov aktivovaný hoverom
+- Moderný layout - Flexbox a CSS Grid
+- Optimalizovaný výkon - Lenivé načítanie obrázkov, optimalizácie prehliadača
+- Mobilný QR prístup - Ľahké mobilné testovanie cez QR kód
 
-![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://Saydva.github.io/PersonalCard)
+## Použitie
 
-**Živá ukážka:** [https://Saydva.github.io/PersonalCard
-](https://Saydva.github.io/PersonalCard)
+### Klonovanie repozitára
 
-_Poznámka: Po nahratí nahraďte `username` a `nail-design-portfolio` vaším skutočným používateľským menom GitHub a názvom repozitára._
+```
+git clone https://github.com/username/PersonalCard.git
+```
 
-## 🛠️ Použité technológie
+### Otvorenie projektu
 
-- **HTML5** - Sémantické označenie
-- **CSS3** - Moderné štýlovanie s Flexbox, Grid, Animáciami
-- **Vanilla JavaScript** - Intersection Observer API pre animácie pri posúvaní
-- **Google Fonts** - Rodina písiem Dancing Script
+1. Naklonujte alebo stiahnite projekt
+2. Otvorte `index.html` vo VS Code
+3. Nainštalujte rozšírenie **Live Server**
+4. Kliknite pravým tlačidlom → "Open with Live Server"
+5. Naskenujte QR kód pre mobilný prístup
 
-## 📂 Štruktúra súborov
+## Štruktúra projektu
+
+Projekt používa čisté HTML, CSS a JavaScript bez rámcov. Štruktúra je organizovaná do priečinkov pre štýly, skripty a assety.
+
+### Stromová štruktúra
 
 ```
 PersonalCard/
@@ -40,58 +51,43 @@ PersonalCard/
     └── *.jpg                 # Obrázky galérie
 ```
 
-## ✨ Funkcie
+### Popis technológií a súborov
 
-- **Responzívny dizajn** - Funguje na počítači, tablete a mobile
-- **Plynulé animácie** - CSS keyframes a JavaScript spúšťače posúvania
-- **Interaktívna galéria** - Slider obrázkov aktivovaný hoverom
-- **Moderný layout** - Flexbox a CSS Grid
-- **Optimalizovaný výkon** - Lenivé načítanie obrázkov, optimalizácie prehliadača
-- **Mobilný QR prístup** - Ľahké mobilné testovanie cez QR kód
+#### HTML
 
-## 🚀 Rýchly štart
+index.html obsahuje hlavnú štruktúru stránky s sémantickým HTML5.
 
-### Lokálny vývoj:
+#### CSS
 
-1. Naklonujte alebo stiahnite projekt
-2. Otvorte `index.html` vo VS Code
-3. Nainštalujte rozšírenie **Live Server**
-4. Kliknite pravým tlačidlom → "Open with Live Server"
-5. Naskenujte QR kód pre mobilný prístup
+Súbory CSS sú rozdelené na moduly: style.css pre hlavné importy, header-logo.css pre hlavičku, navigation.css pre navigáciu, content.css pre obsah, images.css pre galériu a responzive.css pre responzívny dizajn.
 
-### Nasadenie na GitHub Pages:
+#### JavaScript
 
-1. Nahrajte do GitHub repozitára
-2. Povolte GitHub Pages v Nastaveniach
-3. Prístup cez: `https://username.github.io/repo-name`
+optimization.js obsahuje optimalizácie výkonu a prehliadača, slogan-animation.js obsahuje animácie spúšťané posúvaním pomocou Intersection Observer API.
 
-## 📱 Responzívne zlomové body
+#### Obrázky
 
-- **Počítač**: 1200px and above
-- **Tablet**: 769px - 1199px
-- **Mobil**: 768px and below
-- **Malý mobil**: 480px and below
+Galéria obsahuje obrázky nechtov stiahnuté z Unsplash.
 
-## 🎨 Dizajnové highlights
+#### Ostatné
 
-- Vlastná farebná schéma s teplými tónmi (#8b4513, #dfd1d0)
-- Elegantná typografia Dancing Script
-- Plynulé správanie posúvania
-- Interaktívne efekty hover
-- Profesionálny layout so sémantickým HTML
-- Optimalizácia pre rôzne prehliadače
+logo.svg je SVG logo spoločnosti.
 
-## 🔧 Podpora prehliadačov
+## Ako projekt funguje
 
-- ✅ Chrome/Edge (najnovšie)
-- ✅ Firefox (najnovšie)
-- ✅ Safari (najnovšie)
-- ✅ Mobilné prehliadače
-- ✅ Detekcia podpory WebP obrázkov
-- ✅ Predvoľby zníženého pohybu
+Stránka používa Intersection Observer API na spúšťanie animácií pri posúvaní, CSS pre moderné štýlovanie s Flexbox a Grid, a JavaScript pre interaktívne prvky ako galéria slider. Je optimalizovaná pre rôzne prehliadače a zariadenia.
 
----
+## Ako rozšíriť projekt
 
-_Vytvorené s ❤️ pomocou čistého, sémantického kódu_
+- Pridajte nové obrázky do priečinka assets/
+- Upravte CSS súbory pre nové štýly alebo prvky
+- Rozšírte JavaScript pre ďalšie interaktivity
+- Aktualizujte HTML štruktúru podľa potreby
 
-**Rýchly mobilný prístup:** Naskenujte QR kód vyššie 📱
+## Online verzia
+
+Projekt live: https://Saydva.github.io/PersonalCard
+
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://Saydva.github.io/PersonalCard)
+
+_Poznámka: Po nahratí nahraďte `username` a `PersonalCard` vaším skutočným používateľským menom GitHub a názvom repozitára._
