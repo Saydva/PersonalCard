@@ -31,7 +31,7 @@ git clone https://github.com/username/PersonalCard.git
 
 Projekt používa čisté HTML, CSS a JavaScript bez rámcov. Štruktúra je organizovaná do priečinkov pre štýly, skripty a assety.
 
-### Stromová štruktúra
+## Stromová štruktúra
 
 ```
 PersonalCard/
@@ -51,25 +51,25 @@ PersonalCard/
     └── *.jpg                 # Obrázky galérie
 ```
 
-### Popis technológií a súborov
+## Popis technológií a súborov
 
-#### HTML
+### HTML
 
 index.html obsahuje hlavnú štruktúru stránky s sémantickým HTML5.
 
-#### CSS
+### CSS
 
 Súbory CSS sú rozdelené na moduly: style.css pre hlavné importy, header-logo.css pre hlavičku, navigation.css pre navigáciu, content.css pre obsah, images.css pre galériu a responzive.css pre responzívny dizajn.
 
-#### JavaScript
+### JavaScript
 
 optimization.js obsahuje optimalizácie výkonu a prehliadača, slogan-animation.js obsahuje animácie spúšťané posúvaním pomocou Intersection Observer API.
 
-#### Obrázky
+### Obrázky
 
 Galéria obsahuje obrázky nechtov stiahnuté z Unsplash.
 
-#### Ostatné
+### Ostatné
 
 logo.svg je SVG logo spoločnosti.
 
